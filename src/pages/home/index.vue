@@ -6,7 +6,7 @@
 
 <script>
 
-import { navMenuConfig } from '../config/index';
+import { navMenuConfig } from '@/config';
 
 export default {
   name: 'Home',
