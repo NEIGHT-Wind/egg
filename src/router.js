@@ -3,9 +3,10 @@ import VueRouter from 'vue-router';
 import {
   home,
   login,
-  photoHome,
+  introduce,
+  photoIntroduce,
   photoModule,
-  videoHome,
+  videoIntroduce,
   videoModule
 } from '@/pages';
 import { getCookies } from '@/util';
@@ -24,19 +25,25 @@ const routes = [
     path: '/home',
     name: 'home',
     component: home,
+    redirect: '/home/introduce',
     children: [
       {
-        path: 'photoHome',
-        name: 'photoHome',
-        component: photoHome,
+        path: 'introduce',
+        name: 'introduce',
+        component: introduce,
+      },
+      {
+        path: 'photoIntroduce',
+        name: 'photoIntroduce',
+        component: photoIntroduce,
       }, {
         path: 'photoModule/:id',
         name: 'photoModule',
         component: photoModule,
       }, {
-        path: 'videoHome',
-        name: 'videoHome',
-        component: videoHome,
+        path: 'videoIntroduce',
+        name: 'videoIntroduce',
+        component: videoIntroduce,
       }, {
         path: 'videoModule/:id',
         name: 'videoModule',

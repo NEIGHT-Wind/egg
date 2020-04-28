@@ -119,6 +119,9 @@ export default {
       if (currentSubMenu) {
         this.currentSubMenu = currentSubMenu;
         this.currentSubMenuArr = [currentSubMenu];
+      } else {
+        this.currentSubMenu = '';
+        this.currentSubMenuArr = [];
       }
 
       return dealList;

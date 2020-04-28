@@ -1,7 +1,7 @@
-import photoHome from './home';
+import photoIntroduce from './introduce';
 import photoModule from './module';
 
 export {
-  photoHome,
+  photoIntroduce,
   photoModule
 }

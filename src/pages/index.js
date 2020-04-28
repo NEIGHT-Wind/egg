@@ -1,13 +1,15 @@
 import login from './login';
 import home from './home';
-import { photoHome, photoModule } from './photo';
-import { videoHome, videoModule } from './video';
+import introduce from './introduce';
+import { photoIntroduce, photoModule } from './photo';
+import { videoIntroduce, videoModule } from './video';
 
 export {
   login,
   home,
-  photoHome,
+  introduce,
+  photoIntroduce,
   photoModule,
-  videoHome,
+  videoIntroduce,
   videoModule
 }

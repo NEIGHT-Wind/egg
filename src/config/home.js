@@ -5,9 +5,9 @@ export const menuList = [
     icon: 'el-icon-picture-outline',
     children: [
       {
-        title: 'Home',
+        title: 'Introduce',
         id: 'photo-home',
-        routeConfig: { name: 'photoHome' }
+        routeConfig: { name: 'photoIntroduce' }
       }
     ]
   }, {
@@ -16,9 +16,9 @@ export const menuList = [
     icon: 'el-icon-video-camera',
     children: [
       {
-        title: 'Home',
+        title: 'Introduce',
         id: 'video-home',
-        routeConfig: { name: 'videoHome' }
+        routeConfig: { name: 'videoIntroduce' }
       }
     ]
   }

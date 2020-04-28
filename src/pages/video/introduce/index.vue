@@ -1,13 +1,13 @@
 <template>
   <div>
-    photo-home
+    video-introduce
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'photoHome'
+  name: 'videoIntroduce'
 }
 
 </script>

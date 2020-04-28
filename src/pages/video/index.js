@@ -1,7 +1,7 @@
-import videoHome from './home';
+import videoIntroduce from './introduce';
 import videoModule from './module';
 
 export {
-  videoHome,
+  videoIntroduce,
   videoModule
 }
