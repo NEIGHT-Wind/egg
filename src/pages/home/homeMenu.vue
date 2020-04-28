@@ -23,8 +23,7 @@
           :style="moduleItem.isCurrentRoute ? currentRouteStyle : {}"
           :key="moduleItem.id"
           :index="moduleItem.id"
-          :route="moduleItem.routeConfig"
-          @click="linkTo(moduleItem.id)">
+          :route="moduleItem.routeConfig">
           <span slot="title">{{moduleItem.title}}</span>
         </el-menu-item>
 
@@ -119,7 +118,7 @@ export default {
       // 打开当前submenu
       if (currentSubMenu) {
         this.currentSubMenu = currentSubMenu;
-        this.currentSubMenuArr = [currentSubMenu]
+        this.currentSubMenuArr = [currentSubMenu];
       }
 
       return dealList;
@@ -131,7 +130,7 @@ export default {
         .then(res => {
           this.loading = false;
 
-          let list = []
+          let list = [];
           list = this.addModuleRoute(res);
           list = this.setCurrentRoute(list);
           this.menuList = list;
