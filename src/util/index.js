@@ -22,12 +22,19 @@ const getCookies = () => {
   return cookieMap;
 };
 
-const getUserInfo = ($router) => {
+const removeCookies = cookieArr => {
+  cookieArr.forEach(item => {
+    const lastDay = moment().subtract(1, 'days').toDate();
+    document.cookie = `${item}=; expires=${lastDay}`;
+  });
+};
+
+const getUserInfo = () => {
   const { userName, token } = getCookies();
   if (!token) {
     MessageBox.alert('登录用户已过期，请重新登陆', '提示', {
       confirmButtonText: '确定',
-      callback: () => { $router.push({ name: 'login' }) }
+      callback: () => { window.location.hash = '#/login' }
     });
   }
   return { userName, token };
@@ -36,5 +43,6 @@ const getUserInfo = ($router) => {
 export {
   getCookies,
   setCookies,
+  removeCookies,
   getUserInfo
 }

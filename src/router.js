@@ -29,6 +29,6 @@ router.beforeEach((to, from, next) => {
     return;
   }
   next({ name: 'login' });
-})
+});
 
 export default router;

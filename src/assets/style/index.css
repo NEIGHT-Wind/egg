@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+p:hover{
+  cursor: default;
+}
+
+.text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .width-100{
   width: 100px !important;
 }
