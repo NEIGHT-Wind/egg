@@ -31,7 +31,7 @@
 import { getUserInfo, removeCookies } from '@/util';
 
 export default {
-  name: 'user-nav',
+  name: 'userNav',
 
   data() {
     return {

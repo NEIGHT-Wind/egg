@@ -13,10 +13,12 @@
     <el-container class="home-content">
 
       <el-aside width="200px">
-        <home-meun></home-meun>
+        <home-menu></home-menu>
       </el-aside>
 
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
@@ -24,14 +26,14 @@
 <script>
 
 import userNav from './userNav';
-import homeMeun from './homeMeun';
+import homeMenu from './homeMenu';
 
 export default {
   name: 'Home',
 
   components: {
     'user-nav': userNav,
-    'home-meun': homeMeun
+    'home-menu': homeMenu
   }
 }
 
@@ -54,18 +56,17 @@ export default {
 
 .home-content{
   flex: 1;
+  display: flex;
 }
 
 .el-aside {
-  text-align: center;
-  line-height: 200px;
+  display: flex;
 }
 
 .el-main {
   background-color: #E9EEF3;
   color: #333;
-  text-align: center;
-  line-height: 160px;
+  flex: 1;
 }
 
 </style>

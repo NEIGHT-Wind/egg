@@ -1,7 +1,13 @@
-import Login from './login';
-import Home from './home';
+import login from './login';
+import home from './home';
+import { photoHome, photoModule } from './photo';
+import { videoHome, videoModule } from './video';
 
 export {
-  Login,
-  Home
+  login,
+  home,
+  photoHome,
+  photoModule,
+  videoHome,
+  videoModule
 }

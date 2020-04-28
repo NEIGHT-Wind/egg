@@ -1,14 +1,18 @@
-const test = (params) => {
+const getMenuModuleList = () => {
   return new Promise(res => {
-    console.log('loginSubmit', params);
+    console.log('getMenuModuleList');
     setTimeout(() => {
       res({
-        token: '123456789'
+        photo: [
+          { title: 'wyx', id: 'wyx' },
+          { title: 'lxx', id: 'lxx' }
+        ],
+        video: []
       });
     }, 2000);
   })
 };
 
 export default {
-  test
+  getMenuModuleList
 };

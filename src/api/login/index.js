@@ -1,4 +1,4 @@
-const loginSubmit = (params) => {
+const loginSubmit = params => {
   return new Promise(res => {
     console.log('loginSubmit', params);
     setTimeout(() => {
