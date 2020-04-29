@@ -31,7 +31,7 @@
         class="open-btn"
         :style="linkStyle"
         @click="linkTo">
-        <span>Open a good memory</span>
+        <span>Start the journey of recollection</span>
         <i class="el-icon-arrow-right"></i>
       </el-link>
 

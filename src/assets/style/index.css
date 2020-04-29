@@ -7,16 +7,16 @@ p:hover{
   cursor: default;
 }
 
-.text-overflow{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .width-100{
   width: 100px !important;
 }
 
 .width-300{
   width: 300px !important;
+}
+
+.text-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

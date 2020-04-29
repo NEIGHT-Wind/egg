@@ -4,13 +4,16 @@
 
       <div class="content-title">
         <div class="title-box">
-          <p class="main-title">Save every smile</p>
-          <p class="title-chinese">留存每一个笑容</p>
+          <p class="main-title">Precious Recollection</p>
         </div>
 
         <div class="title-box">
-          <p class="sub-title">No user name will be automatically registered~</p>
-          <p class="title-chinese">没有用户名自动注册哦~</p>
+          <p class="sub-title">-- Save every smile --</p>
+        </div>
+
+        <div class="title-box">
+          <p class="little-title">Automatic registration of new users~</p>
+          <p class="little-title mt10">新用户自动注册哦~</p>
         </div>
 
       </div>
@@ -70,7 +73,7 @@ export default {
 .login-content{
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 400px;
   height: 400px;
   padding: 10px 30px;
   box-shadow: 5px 5px 5px #f5f5f5, 5px -5px 5px #f5f5f5, -5px 5px 5px #f5f5f5, -5px -5px 5px #f5f5f5;
@@ -98,14 +101,17 @@ export default {
 }
 
 .sub-title{
-  font-size: 18px;
+  font-size: 20px;
   color: #707070;
 }
 
-.title-chinese{
+.little-title{
   font-size: 14px;
   color: #A0A0A0;
-  margin-top: 10px;
+}
+
+.mt10{
+  margin-top: 10px;  
 }
 
 </style>

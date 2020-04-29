@@ -3,7 +3,7 @@
     <el-header>
 
       <div class="logo">
-        <p class="logo-text">Beautiful Sunset</p>
+        <p class="logo-text">Precious Recollection</p>
       </div>
 
       <user-nav></user-nav>
