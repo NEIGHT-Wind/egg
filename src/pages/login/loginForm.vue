@@ -44,7 +44,7 @@ export default {
 
     const validateFunc = (rule, value, callback) => {
       if (value !== '' && reg.test(value)) {
-        callback(new Error('存在非法字符'));
+        callback(new Error('Illegal characters present'));
         return;
       }
       callback();
@@ -57,12 +57,12 @@ export default {
       },
       rules: {
         userName: [
-          { required: true, message: '请输入用户名', trigger: 'blur' },
+          { required: true, message: 'Please input user name', trigger: 'blur' },
           { validator: validateFunc, trigger: 'change' },
           { validator: validateFunc, trigger: 'blur' }
         ],
         passWord: [
-          { required: true, message: '请输入密码', trigger: 'blur' },
+          { required: true, message: 'Please input password', trigger: 'blur' },
           { validator: validateFunc, trigger: 'change' },
           { validator: validateFunc, trigger: 'blur' }
         ]

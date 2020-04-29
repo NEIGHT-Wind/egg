@@ -3,8 +3,16 @@
     <div class="login-content">
 
       <div class="content-title">
-        <p class="main-title">留存每一个笑容</p>
-        <p class="sub-title">没有用户名会自动注册哦~</p>
+        <div class="title-box">
+          <p class="main-title">Save every smile</p>
+          <p class="title-chinese">留存每一个笑容</p>
+        </div>
+
+        <div class="title-box">
+          <p class="sub-title">No user name will be automatically registered~</p>
+          <p class="title-chinese">没有用户名自动注册哦~</p>
+        </div>
+
       </div>
 
       <login-form></login-form>
@@ -62,9 +70,9 @@ export default {
 .login-content{
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 300px;
-  padding: 30px 50px;
+  width: 450px;
+  height: 400px;
+  padding: 10px 30px;
   box-shadow: 5px 5px 5px #f5f5f5, 5px -5px 5px #f5f5f5, -5px 5px 5px #f5f5f5, -5px -5px 5px #f5f5f5;
   border-radius: 10px;
   background-color: #fff;
@@ -72,21 +80,32 @@ export default {
 }
 
 .content-title{
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
+.title-box{
+  text-align: center;
+}
+
 .main-title{
-  font-size: 22px;
+  font-size: 24px;
+  color: #707070;
   font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .sub-title{
+  font-size: 18px;
+  color: #707070;
+}
+
+.title-chinese{
   font-size: 14px;
   color: #A0A0A0;
+  margin-top: 10px;
 }
+
 </style>
