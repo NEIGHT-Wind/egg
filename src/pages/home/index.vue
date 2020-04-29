@@ -67,6 +67,7 @@ export default {
   background-color: #E9EEF3;
   color: #333;
   flex: 1;
+  display: flex;
 }
 
 </style>
