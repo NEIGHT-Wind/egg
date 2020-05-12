@@ -40,9 +40,32 @@ const getUserInfo = () => {
   return { userName, token };
 };
 
+const setStorage = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
+};
+
+const getStorage = (key) => {
+  const JSONStr = localStorage.getItem(key);
+  let data = undefined;
+  if (JSONStr) {
+    try {
+      data = JSON.parse(JSONStr);
+    } catch (e) {}
+  }
+  return data;
+};
+
+const removeStorage = (key) => {
+  localStorage.removeItem(key);
+};
+
 export {
   getCookies,
   setCookies,
   removeCookies,
-  getUserInfo
+  getUserInfo,
+
+  setStorage,
+  getStorage,
+  removeStorage
 }

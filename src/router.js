@@ -4,6 +4,7 @@ import {
   home,
   login,
   introduce,
+  editModule,
   photoIntroduce,
   photoModule,
   videoIntroduce,
@@ -31,6 +32,11 @@ const routes = [
         path: 'introduce',
         name: 'introduce',
         component: introduce,
+      },
+      {
+        path: 'editModule/:id',
+        name: 'editModule',
+        component: editModule,
       },
       {
         path: 'photoIntroduce',

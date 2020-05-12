@@ -28,7 +28,7 @@
 <script>
 
 import { getCookies } from '@/util';
-import loginForm from './loginForm';
+import loginForm from './form';
 
 export default {
   name: 'Login',

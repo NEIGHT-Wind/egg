@@ -35,7 +35,8 @@
 
 <script>
 
-import { menuList } from '@/config';
+import { menuList, meunModuleStorageKey } from '@/config';
+import { setStorage } from '@/util';
 import api from '@/api';
 
 export default {
@@ -132,6 +133,8 @@ export default {
       api.getMenuModuleList()
         .then(res => {
           this.loading = false;
+
+          setStorage(meunModuleStorageKey, res);
 
           let list = [];
           list = this.addModuleRoute(res);

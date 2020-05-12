@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 p:hover{
@@ -13,6 +14,14 @@ p:hover{
 
 .width-300{
   width: 300px !important;
+}
+
+.mr10{
+  margin-right: 10px !important;
+}
+
+.ml10{
+  margin-left: 10px !important;
 }
 
 .text-overflow{

@@ -23,3 +23,5 @@ export const menuList = [
     ]
   }
 ];
+
+export const meunModuleStorageKey = 'MENU_MODULE';
