@@ -30,7 +30,8 @@
       </div>
 
       <module-form
-       :edit-status="editStatus"></module-form>
+        ref="module-form"
+        :edit-status="editStatus"></module-form>
 
     </div>
 
@@ -76,10 +77,15 @@ export default {
     },
 
     save() {
-      this.editStatus = false;
+      this.$refs['module-form'].submit()
+        .then(() => { 
+          window.location.reload();
+         })
+        .catch(() => {});
     },
 
     cancel() {
+      this.$refs['module-form'].cancel()
       this.editStatus = false;
     }
   }

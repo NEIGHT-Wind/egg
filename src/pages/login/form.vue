@@ -33,6 +33,7 @@
 
 <script>
 
+import { IllegalCharactersReg } from '@/config';
 import { setCookies } from '@/util';
 import api from '@/api';
 
@@ -40,10 +41,8 @@ export default {
   name: 'loginForm',
 
   data() {
-    const reg = /[@#\$%\^&\*]+/; // eslint-disable-line
-
     const validateFunc = (rule, value, callback) => {
-      if (value !== '' && reg.test(value)) {
+      if (value !== '' && IllegalCharactersReg.test(value)) {
         callback(new Error('Illegal characters present'));
         return;
       }
@@ -96,7 +95,7 @@ export default {
             .catch(() => {
               this.loading = false;
               this.$message({
-                message: '用户登录失败！请重试',
+                message: 'User login failed! Please try again',
                 center: true,
                 type: 'error'
               });

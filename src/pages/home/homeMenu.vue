@@ -132,14 +132,15 @@ export default {
       this.loading = true;
       api.getMenuModuleList()
         .then(res => {
-          this.loading = false;
-
           setStorage(meunModuleStorageKey, res);
 
           let list = [];
           list = this.addModuleRoute(res);
           list = this.setCurrentRoute(list);
           this.menuList = list;
+        })
+        .finally(() => {
+          this.loading = false;
         });
     }
   }

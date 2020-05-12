@@ -5,7 +5,8 @@ const getMenuModuleList = () => {
       res({
         photo: [
           { title: 'wyx', id: 'wyx' },
-          { title: 'lxx', id: 'lxx' }
+          { title: 'lxx', id: 'lxx' },
+          { title: 'three', id: 'thr' }
         ],
         video: []
       });
