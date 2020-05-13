@@ -12,6 +12,7 @@ module.exports = {
     "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
+    "parser": "babel-eslint",
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
@@ -19,6 +20,6 @@ module.exports = {
     "vue"
   ],
   "rules" : {
-    "no-empty": ["error", {allowEmptyCatch: true}],
+    "no-empty": ["error", {allowEmptyCatch: true}]
   }
 }

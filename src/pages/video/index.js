@@ -1,5 +1,5 @@
-import videoIntroduce from './introduce';
-import videoModule from './module';
+const videoIntroduce = () => import(/* webpackChunkName: "videoIntroduce" */ './introduce');
+const videoModule = () => import(/* webpackChunkName: "videoModule" */ './module');
 
 export {
   videoIntroduce,

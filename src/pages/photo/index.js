@@ -1,5 +1,5 @@
-import photoIntroduce from './introduce';
-import photoModule from './module';
+const photoIntroduce = () => import(/* webpackChunkName: "photoIntroduce" */ './introduce');
+const photoModule = () => import(/* webpackChunkName: "photoModule" */ './module');
 
 export {
   photoIntroduce,
